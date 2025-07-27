@@ -1,24 +1,23 @@
 package com.erdal.service;
 
-import java.util.List;
 import java.util.Set;
 
 import com.erdal.DTO.CategoryDTO;
 import com.erdal.DTO.SaloonDTO;
-import com.erdal.model.ServiceOffering;
+import com.erdal.DTO.ServiceOfferingDTO;
 import com.erdal.request.ServiceOfferingRequest;
 
 public interface ServiceOfferingService {
 	
-	ServiceOffering createService(SaloonDTO saloonDTO,ServiceOfferingRequest serviceOfferingRequest,CategoryDTO categoryDTO);
+	ServiceOfferingDTO createServiceOffering(SaloonDTO saloonDTO,ServiceOfferingRequest serviceOfferingRequest,CategoryDTO categoryDTO);
 	
-	ServiceOffering updateService(Long serviceId,ServiceOfferingService serviceOfferingService);
+	ServiceOfferingDTO updateServiceOffering(Long id,ServiceOfferingDTO serviceOfferingDTO);
 	
-	Set<ServiceOfferingService> getAllserviceBySaloonId(Long saloonId,Long categoryId);
+	Set<ServiceOfferingDTO> getAllserviceBySaloonId(Long saloonId,Long categoryId);
 	
-	List<ServiceOfferingService> getServiceOfferinById(Set<Long> ids);
+	Set<ServiceOfferingDTO> getServiceOfferinByIds(Set<Long> ids);
 	
-	
+	ServiceOfferingDTO getServiceById(Long id);
 	
 
 }

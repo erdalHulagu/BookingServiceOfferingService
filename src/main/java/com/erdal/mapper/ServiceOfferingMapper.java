@@ -1,13 +1,9 @@
 package com.erdal.mapper;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.erdal.DTO.SaloonDTO;
 import com.erdal.DTO.ServiceOfferingDTO;
-import com.erdal.model.Saloon;
 import com.erdal.model.ServiceOffering;
 
 public class ServiceOfferingMapper {
