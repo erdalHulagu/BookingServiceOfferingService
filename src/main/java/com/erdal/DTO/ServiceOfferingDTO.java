@@ -9,12 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ServiceOfferingDTO {
 	
-
-	private Long id;
 	
 	private String offeringName;
 	
-	private String descreption;
+	private String description;
 	
 	private Integer price;
 	

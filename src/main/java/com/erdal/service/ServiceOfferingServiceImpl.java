@@ -32,7 +32,7 @@ public class ServiceOfferingServiceImpl implements ServiceOfferingService {
 		
 		ServiceOffering serviceOffering=new ServiceOffering();
 		serviceOffering.setOfferingName(serviceOfferingRequest.getOfferingName());
-		serviceOffering.setDescreption(serviceOfferingRequest.getDescreption());
+		serviceOffering.setDescription(serviceOfferingRequest.getDescription());
 		serviceOffering.setDuration(serviceOfferingRequest.getDuration());
 		serviceOffering.setPrice(serviceOfferingRequest.getPrice());
 		serviceOffering.setOfferingImage(serviceOfferingRequest.getOfferingImage());
@@ -46,15 +46,15 @@ public class ServiceOfferingServiceImpl implements ServiceOfferingService {
 	}
 
 	@Override
-	public ServiceOfferingDTO updateServiceOffering(Long Id, ServiceOfferingDTO serviceOfferingDTO) {
+	public ServiceOfferingDTO updateServiceOffering(Long Id, ServiceOfferingRequest serviceOfferingRequest) {
 		
 	ServiceOffering serviceOffering=findServiceOfferingById(Id);
 		
-	serviceOffering.setOfferingName(serviceOfferingDTO.getOfferingName());
-	serviceOffering.setDescreption(serviceOfferingDTO.getDescreption());
-	serviceOffering.setDuration(serviceOfferingDTO.getDuration());
-	serviceOffering.setPrice(serviceOfferingDTO.getPrice());
-	serviceOffering.setOfferingImage(serviceOfferingDTO.getOfferingImage());
+	serviceOffering.setOfferingName(serviceOfferingRequest.getOfferingName());
+	serviceOffering.setDescription(serviceOfferingRequest.getDescription());
+	serviceOffering.setDuration(serviceOfferingRequest.getDuration());
+	serviceOffering.setPrice(serviceOfferingRequest.getPrice());
+	serviceOffering.setOfferingImage(serviceOfferingRequest.getOfferingImage());
 	
 	ServiceOffering serviceOffering2=serviceOfferingRepository.save(serviceOffering);
 	

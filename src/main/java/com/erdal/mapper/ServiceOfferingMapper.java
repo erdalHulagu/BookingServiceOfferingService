@@ -11,10 +11,10 @@ public class ServiceOfferingMapper {
 	public static ServiceOfferingDTO serviceOfferingDTO(ServiceOffering serviceOffering) {
 
 		ServiceOfferingDTO serviceOfferingDTO = new ServiceOfferingDTO();
-		serviceOfferingDTO.setId(serviceOffering.getId());
+//		serviceOfferingDTO.setId(serviceOffering.getId());
 		serviceOfferingDTO.setOfferingName(serviceOffering.getOfferingName());
 		serviceOfferingDTO.setCategoryId(serviceOffering.getCategoryId());
-		serviceOfferingDTO.setDescreption(serviceOffering.getDescreption());
+		serviceOfferingDTO.setDescription(serviceOffering.getDescription());
 		serviceOfferingDTO.setDuration(serviceOffering.getDuration());
 		serviceOfferingDTO.setPrice(serviceOffering.getPrice());
 		serviceOfferingDTO.setSaloonId(serviceOffering.getSaloonId());

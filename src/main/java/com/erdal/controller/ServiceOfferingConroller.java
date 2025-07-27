@@ -39,7 +39,7 @@ public class ServiceOfferingConroller {
 		
 		
 	}
-	@GetMapping("/list/ids}")
+	@GetMapping("/list/{ids}")
 	public ResponseEntity <Set<ServiceOfferingDTO> >getAllServiceOfferingByIds(@PathVariable Set<Long> ids){
 		
 		Set<ServiceOfferingDTO> serviceOfferingDTOs=serviceOfferingService.getServiceOfferinByIds(ids);

@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ServiceOfferingRequest {
 	
-
-	private Long id;
+//
+//	private Long id;
 	
 	private String offeringName;
 	
-	private String descreption;
+	private String description;
 	
 	private Integer price;
 	

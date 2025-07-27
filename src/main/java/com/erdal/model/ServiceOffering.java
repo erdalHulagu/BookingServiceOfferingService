@@ -24,7 +24,7 @@ public class ServiceOffering {
 	private String offeringName;
 	
 	@Column(nullable = false)
-	private String descreption;
+	private String description;
 	
 	@Column(nullable = false)
 	private Integer price;

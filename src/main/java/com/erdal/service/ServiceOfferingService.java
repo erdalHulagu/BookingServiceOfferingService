@@ -11,7 +11,7 @@ public interface ServiceOfferingService {
 	
 	ServiceOfferingDTO createServiceOffering(SaloonDTO saloonDTO,ServiceOfferingRequest serviceOfferingRequest,CategoryDTO categoryDTO);
 	
-	ServiceOfferingDTO updateServiceOffering(Long id,ServiceOfferingDTO serviceOfferingDTO);
+	ServiceOfferingDTO updateServiceOffering(Long id,ServiceOfferingRequest serviceOfferingRequest);
 	
 	Set<ServiceOfferingDTO> getAllserviceBySaloonId(Long saloonId,Long categoryId);
 	
