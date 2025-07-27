@@ -39,7 +39,7 @@ public class ServiceOffering {
 	private Long categoryId;
 	
 	@Column(nullable = false)
-	private String image;
+	private String offeringImage;
 	
 	
 	
